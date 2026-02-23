@@ -1,0 +1,16 @@
+{
+  "name": "crescix-bot",
+  "version": "1.0.0",
+  "description": "Fluxo de automação para CrescIX",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "@ngrok/ngrok": "^1.0.0"
+  }
+}
