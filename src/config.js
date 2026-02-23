@@ -1,11 +1,8 @@
-const fs = require("fs");
-
+// src/config.js
 function updateEnvVar(key, value) {
-  const env = fs.readFileSync(".env", "utf8").split("\n");
-  const index = env.findIndex((line) => line.startsWith(`${key}=`));
-  if (index !== -1) env[index] = `${key}=${value}`;
-  else env.push(`${key}=${value}`);
-  fs.writeFileSync(".env", env.join("\n"));
+  // No Easypanel, as variáveis são gerenciadas pela interface do painel.
+  // Este log ajuda a ver o que o sistema tentou alterar.
+  console.log(`[Config] Sugestão de atualização: ${key} = ${value}`);
 }
 
 function randomToken() {
